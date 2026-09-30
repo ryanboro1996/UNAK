@@ -1,0 +1,6 @@
+{
+  "name": "VidyaERP - School Admin & Principal Management Portal",
+  "description": "Comprehensive school administration system for Principals and staff to manage teachers, students, fees, attendance, payroll, dynamic analytics, chat, and reports.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

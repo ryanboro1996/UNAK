@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <!-- Definitions for text paths -->
+  <defs>
+    <!-- Top arc for U.N. ACADEMY -->
+    <path id="topTextArc" d="M 65 250 A 185 185 0 0 1 435 250" fill="none" />
+    <!-- Bottom arc for KHAGRABARI -->
+    <path id="bottomTextArc" d="M 435 250 A 185 185 0 0 1 65 250" fill="none" />
+    
+    <!-- Filter for slight drop shadow -->
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Black Border -->
+  <circle cx="250" cy="250" r="246" fill="#000000" />
+  
+  <!-- Outer Yellow Ring -->
+  <circle cx="250" cy="250" r="236" fill="#FFEB00" stroke="#000000" stroke-width="6" />
+
+  <!-- Inner Blue Circle -->
+  <circle cx="250" cy="250" r="162" fill="#007AEB" stroke="#000000" stroke-width="7" />
+
+  <!-- Text Top: U.N. ACADEMY -->
+  <text fill="#0035B5" font-family="'Plus Jakarta Sans', 'Arial Black', Impact, sans-serif" font-weight="900" font-size="52" letter-spacing="4">
+    <textPath href="#topTextArc" startOffset="50%" text-anchor="middle">
+      U.N. ACADEMY
+    </textPath>
+  </text>
+
+  <!-- Text Bottom: KHAGRABARI -->
+  <text fill="#0035B5" font-family="'Plus Jakarta Sans', 'Arial Black', Impact, sans-serif" font-weight="900" font-size="44" letter-spacing="5">
+    <textPath href="#bottomTextArc" startOffset="50%" text-anchor="middle">
+      KHAGRABARI
+    </textPath>
+  </text>
+
+  <!-- Inner Graphics Group -->
+  <g transform="translate(0, 5)">
+    <!-- Red Rays radiating above the flame -->
+    <!-- Center ray -->
+    <line x1="250" y1="185" x2="250" y2="150" stroke="#E60000" stroke-width="9" stroke-linecap="round" />
+    <!-- Left rays -->
+    <line x1="230" y1="189" x2="216" y2="157" stroke="#E60000" stroke-width="9" stroke-linecap="round" />
+    <line x1="212" y1="199" x2="188" y2="175" stroke="#E60000" stroke-width="9" stroke-linecap="round" />
+    <line x1="200" y1="216" x2="168" y2="202" stroke="#E60000" stroke-width="9" stroke-linecap="round" />
+    <!-- Right rays -->
+    <line x1="270" y1="189" x2="284" y2="157" stroke="#E60000" stroke-width="9" stroke-linecap="round" />
+    <line x1="288" y1="199" x2="312" y2="175" stroke="#E60000" stroke-width="9" stroke-linecap="round" />
+    <line x1="300" y1="216" x2="332" y2="202" stroke="#E60000" stroke-width="9" stroke-linecap="round" />
+
+    <!-- Open Book -->
+    <!-- Left Page Base (White with black stroke) -->
+    <path d="M 250 330 L 152 235 L 120 338 L 246 360 Z" fill="#FFFFFF" stroke="#000000" stroke-width="6" stroke-linejoin="round" />
+    <!-- Left Page thickness/depth -->
+    <path d="M 120 338 L 132 346 L 246 366 L 246 360 Z" fill="#E2E8F0" stroke="#000000" stroke-width="5" />
+    <line x1="138" y1="250" x2="124" y2="340" stroke="#000000" stroke-width="4" />
+
+    <!-- Right Page Base -->
+    <path d="M 250 330 L 348 235 L 380 338 L 254 360 Z" fill="#FFFFFF" stroke="#000000" stroke-width="6" stroke-linejoin="round" />
+    <!-- Right Page thickness/depth -->
+    <path d="M 380 338 L 368 346 L 254 366 L 254 360 Z" fill="#E2E8F0" stroke="#000000" stroke-width="5" />
+    <line x1="362" y1="250" x2="376" y2="340" stroke="#000000" stroke-width="4" />
+
+    <!-- Red rays on the open book pages -->
+    <!-- Left page inner rays -->
+    <line x1="220" y1="265" x2="185" y2="252" stroke="#FF5252" stroke-width="5" stroke-linecap="round" />
+    <line x1="212" y1="282" x2="172" y2="276" stroke="#FF5252" stroke-width="5" stroke-linecap="round" />
+    <line x1="210" y1="302" x2="168" y2="304" stroke="#FF5252" stroke-width="5" stroke-linecap="round" />
+    <line x1="215" y1="322" x2="178" y2="330" stroke="#FF5252" stroke-width="5" stroke-linecap="round" />
+
+    <!-- Right page inner rays -->
+    <line x1="280" y1="265" x2="315" y2="252" stroke="#FF5252" stroke-width="5" stroke-linecap="round" />
+    <line x1="288" y1="282" x2="328" y2="276" stroke="#FF5252" stroke-width="5" stroke-linecap="round" />
+    <line x1="290" y1="302" x2="332" y2="304" stroke="#FF5252" stroke-width="5" stroke-linecap="round" />
+    <line x1="285" y1="322" x2="322" y2="330" stroke="#FF5252" stroke-width="5" stroke-linecap="round" />
+
+    <!-- The Diya (Clay Lamp) Bowl -->
+    <path d="M 188 348 C 210 388, 290 388, 312 348 C 290 360, 210 360, 188 348 Z" fill="#BA1200" stroke="#000000" stroke-width="6" stroke-linejoin="round" />
+    <!-- Diya inner oil reservoir / rim -->
+    <ellipse cx="250" cy="349" rx="48" ry="8" fill="#520700" stroke="#000000" stroke-width="4" />
+
+    <!-- Flame rising from the Diya -->
+    <path d="M 250 205 C 220 260, 205 295, 222 332 C 235 348, 265 348, 278 332 C 295 295, 280 260, 250 205 Z" fill="#E60000" stroke="#000000" stroke-width="6" stroke-linejoin="round" />
+    
+    <!-- Flame inner highlight -->
+    <path d="M 250 225 C 232 265, 222 290, 232 320 C 240 332, 260 332, 268 320 C 278 290, 268 265, 250 225 Z" fill="#FF2600" opacity="0.6" />
+  </g>
+</svg>
